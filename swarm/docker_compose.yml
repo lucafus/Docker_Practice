@@ -15,14 +15,6 @@ services:
       - drupal-sites:/var/www/html/sites      
       - drupal-themes:/var/www/html/themes
  
-  postgres:
-    image: postgres:14.3
-    environment:
-      - POSTGRES_PASSWORD_FILE=/run/secrets/mysecret
-    secrets:
-      - mysecret
-    volumes:
-      - drupal-data:/var/lib/postgresql/data
 
 volumes:
   drupal-data:
