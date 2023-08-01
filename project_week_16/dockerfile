@@ -1,6 +1,6 @@
 
 #FROM will define the base image
-FROM python:3.9.11
+FROM python:3.9
 
 #RUN will be executing shell commands inside this containers asi its run in it
 RUN pip install --no-cache-dir boto3
